@@ -11,9 +11,9 @@
     let videoElement: HTMLVideoElement
 
     onMount(() => {
-        const player = videojs(videoElement, VideoConfig.settings)
+      const player = videojs(videoElement, VideoConfig.settings)
 
-        player.src(VideoConfig.player)
+      player.src(VideoConfig.player)
     })
 </script>
   
