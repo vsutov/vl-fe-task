@@ -10,6 +10,7 @@ https://vl-fe-task.vercel.app/
 - Code is written with prototyping purposes in mind, meaning that the functionality is basic and is not meant to work perfectly on all devices. Tested on a Macbook Pro 15" laptop.
 - Whole flow is separated into two parts - calibration and actual video playback.
 - Video playback is limited to autoplay without controls as the actual video is not as important as the eye tracking part of the assignment.
+- Kalman filter has been deliberately disabled as it messed with precision. Custom solution for smoothing is used instead.
 
 ## Configuration
 
