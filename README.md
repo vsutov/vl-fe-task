@@ -3,6 +3,9 @@
 
 A video player controlled by vision (eye tracking)
 
+## DEMO
+https://vl-fe-task.vercel.app/
+
 ## Important notes
 - Code is written with prototyping purposes in mind, meaning that the functionality is basic and is not meant to work perfectly on all devices. Tested on a Macbook Pro 15" laptop.
 - Whole flow is separated into two parts - calibration and actual video playback.
