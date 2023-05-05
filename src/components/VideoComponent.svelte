@@ -5,6 +5,9 @@
     import { onMount } from 'svelte'
     import { VideoConfig, HotzoneConfig } from '../const'
 
+    export let gazeX: number
+    export let gazeY: number
+
     let videoElement: HTMLVideoElement
 
     onMount(() => {
@@ -28,9 +31,10 @@
     border: 5px solid rgba(255, 77, 0, 0.8);
     width: var(--hotZoneWidth);
     height: var(--hotZoneHeight);
-    top: 0;
-    left: 0;
+    top: var(--gazeY);
+    left: var(--gazeX);
     filter: drop-shadow(0.2rem 0.2rem 1rem rgba(0,0,0, 0.75));
+    transition: top 0.5s, left 0.5s;
 }
 </style>
 
@@ -44,5 +48,5 @@
 
 <div 
     class="hot-zone"
-    style="--hotZoneWidth: {HotzoneConfig.width}px; --hotZoneHeight: {HotzoneConfig.height}px"
+    style="--gazeX: {gazeX}px; --gazeY: {gazeY}px; --hotZoneWidth: {HotzoneConfig.width}px; --hotZoneHeight: {HotzoneConfig.height}px"
 />
