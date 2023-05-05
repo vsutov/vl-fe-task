@@ -13,3 +13,8 @@ export const HotzoneConfig = {
     width: 1024,
     height: 576
 }
+
+export const WebgazerConfig = {
+    debugMode: false,
+    bufferSize: 10
+}

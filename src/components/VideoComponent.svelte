@@ -21,7 +21,7 @@
 .video-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     cursor: none;
 }
 
@@ -34,7 +34,7 @@
     top: var(--gazeY);
     left: var(--gazeX);
     filter: drop-shadow(0.2rem 0.2rem 1rem rgba(0,0,0, 0.75));
-    transition: top 0.5s, left 0.5s;
+    transition: top 0.2s, left 0.2s;
 }
 </style>
 
