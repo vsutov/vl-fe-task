@@ -3,7 +3,7 @@
     import 'video.js/dist/video-js.min.css'
 
     import { onMount } from 'svelte'
-    import { VideoConfig } from '../const'
+    import { VideoConfig, HotzoneConfig } from '../const'
 
     let videoElement: HTMLVideoElement
 
@@ -16,8 +16,21 @@
   
 <style>
 .video-container {
+    position: relative;
     width: 100vw;
     height: 100vh;
+    cursor: none;
+}
+
+.hot-zone {
+    position: absolute;
+    box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.75);
+    border: 5px solid rgba(255, 77, 0, 0.8);
+    width: var(--hotZoneWidth);
+    height: var(--hotZoneHeight);
+    top: 0;
+    left: 0;
+    filter: drop-shadow(0.2rem 0.2rem 1rem rgba(0,0,0, 0.75));
 }
 </style>
 
@@ -28,3 +41,8 @@
         aria-hidden="true"
     />
 </div>
+
+<div 
+    class="hot-zone"
+    style="--hotZoneWidth: {HotzoneConfig.width}px; --hotZoneHeight: {HotzoneConfig.height}px"
+/>

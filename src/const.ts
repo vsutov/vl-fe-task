@@ -8,3 +8,8 @@ export const VideoConfig = {
         type: 'application/x-mpegURL',
     }
 }
+
+export const HotzoneConfig = {
+    width: 1024,
+    height: 576
+}
