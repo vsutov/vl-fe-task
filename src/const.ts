@@ -18,3 +18,7 @@ export const WebgazerConfig = {
   debugMode: false,
   bufferSize: 10
 }
+
+export const CalibrationConfig = {
+  requiredClicksPerPoint: 5
+}

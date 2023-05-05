@@ -1,20 +1,20 @@
 <script lang="ts">
-    import videojs from 'video.js'
-    import 'video.js/dist/video-js.min.css'
+  import videojs from 'video.js'
+  import 'video.js/dist/video-js.min.css'
 
-    import { onMount } from 'svelte'
-    import { VideoConfig, HotzoneConfig } from '../const'
+  import { onMount } from 'svelte'
+  import { VideoConfig, HotzoneConfig } from '../const'
 
-    export let gazeX: number
-    export let gazeY: number
+  export let gazeX: number
+  export let gazeY: number
 
-    let videoElement: HTMLVideoElement
+  let videoElement: HTMLVideoElement
 
-    onMount(() => {
-      const player = videojs(videoElement, VideoConfig.settings)
+  onMount(() => {
+    const player = videojs(videoElement, VideoConfig.settings)
 
-      player.src(VideoConfig.player)
-    })
+    player.src(VideoConfig.player)
+  })
 </script>
   
 <style>
