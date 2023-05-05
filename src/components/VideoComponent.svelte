@@ -35,6 +35,7 @@
     left: var(--gazeX);
     filter: drop-shadow(0.2rem 0.2rem 1rem rgba(0,0,0, 0.75));
     transition: top 0.2s, left 0.2s;
+    cursor: none;
 }
 </style>
 
